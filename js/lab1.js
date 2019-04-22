@@ -5,7 +5,7 @@ function reverseString(str) {
 }
 
 function listSkills(){
-    let skills = ['Web Development','Gardening','Drumming','Volunteering';
+    let skills = ['Web Development','Gardening','Drumming','Volunteering']; // missing closing brace
     let output = "<h2>Bruce's Skills<h2>";
     output += '<ul>';
     for (let i = 0; i < skills.length; i++) {
@@ -16,14 +16,14 @@ function listSkills(){
 }
 
 function getStarted(){
-    let firstName  'Bruce'
+    let firstName = 'Bruce'; // ending semicolon and no = sign
     let lastName = 'Elgort';
-    let collegeName = 'Clark College'
+    let collegeName = 'Clark College'; // ending semicolon
     let city = 'Vancouver, Washington';
     let gpa = 3.2;
-    let output = `${firstName} {lastName} is currently attending ${collegeName}, located in {city} and has a grade point average of {gpa}`;
+    let output = `${firstName} ${lastName} is currently attending ${collegeName}, located in ${city} and has a grade point average of ${gpa}`; //missing 3 $ before {}
 
-    document.getElementById('place1').innerHTML = '<p>' + output + '</p>";
+    document.getElementById('place1').innerHTML = '<p>' + output + "</p>"; //non-matching quotes
     document.getElementById('place2').innerHTML = '<p>' + reverseString(output) + '</p>';
 }
 
